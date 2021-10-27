@@ -7,7 +7,7 @@ This repository contains my solution to the Itential coding assignment. The func
 3. Run `npm install` to install necessary packages
 4. Run `npm test` to run tests
 
-## How to manually test this function
+## How to manually test this function (optional)
 1. Open index.html in your browser
 2. Press F12 to open Chrome DevTools
 3. Use the Console to manually test the `getAverage` function
