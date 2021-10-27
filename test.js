@@ -38,10 +38,22 @@ describe('#getAverage(...numbers)', () => {
 
         //// Examples ////
 
-        // Basic functionality
+        // All args are numbers
         assert.equal(getAverage(1, 2, 3, 4, 5), (1 + 2 + 3 + 4 + 5) / 5);
+        // Zero
+        assert.equal(getAverage(0, 0, 0, 0, 0), (0 + 0 + 0 + 0 + 0) / 5);
         // Negative numbers
         assert.equal(getAverage(-1, -2, -3, -4, -5), (-1 + -2 + -3 + -4 + -5) / 5)
+        // Hexadecimal numbers
+        assert.equal(getAverage(0xfff, 0xfff, 0xfff), (0xfff + 0xfff + 0xfff) / 3);
+        // Exponential numbers
+        assert.equal(getAverage(2560e-1, 10e1, 2.2e1, 22e0), (2560e-1 + 10e1 + 2.2e1 + 22e0) / 4);
+        // Octal numbers
+        assert.equal(getAverage(002, 003, 004), (002 + 003 + 004) / 3);
+        // Binary numbers
+        assert.equal(getAverage(0001, 0010, 0011, 0100, 0101), (0001 + 0010 + 0011 + 0100 + 0101) / 5);
+        // All args are strings
+        assert.equal(getAverage("1", "2", "3", "4", "5"), (1 + 2 + 3 + 4 + 5) / 5);
         // Mixing numbers, ints and floats, with strings
         assert.equal(getAverage(1, 2, "3", 4, 5, .2, .5, 9, 4, "3000", .127, "6.77"), (1 + 2 + 3 + 4 + 5 + .2 + .5 + 9 + 4 + 3000 + .127 + 6.77) / 12);
         // Strings with different quotes
