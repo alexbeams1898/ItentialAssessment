@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Average App</title>
+</head>
+
+<body>
+    <h1>Open console in dev tools to manually test the getAverage() function</h1>
+    <script type="text/javascript">
+
+        // Note: This is an **exact duplicate** of the getAverage function found in average.js without the documentation
+        function getAverage(...numbers) {
+            numbers = numbers.map(x => Number(x));
+            if (numbers.length < 2)
+                throw "At least two numbers are expected.";
+            if (!numbers.every(x => { return !isNaN(x) }))
+                throw "Numbers contain a value that is NaN or cannot be converted to a number.";
+            return numbers.reduce((x, y) => x + y) / numbers.length;
+        }
+        
+    </script>
+</body>
+
+</html>

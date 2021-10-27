@@ -12,7 +12,7 @@ describe('#getAverage(...numbers)', () => {
 
     });
 
-    it('should throw an error when an argument equals NaN or cannot be converted to a number', function() {
+    it('should throw an error when an argument equals NaN or cannot be converted to a number', () => {
 
         // Examples
         expect(getAverage.bind(this, 1, 2, 3, 4, NaN)).to.throw("Numbers contain a value that is NaN or cannot be converted to a number.");
@@ -24,7 +24,7 @@ describe('#getAverage(...numbers)', () => {
 
     });
 
-    it('should return average correctly for different string and number combinations', function() {
+    it('should return average correctly for different string and number combinations', () => {
 
         // Examples
         assert.equal(getAverage(1, 2, 3, 4, 5), (1 + 2 + 3 + 4 + 5) / 5);

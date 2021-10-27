@@ -14,7 +14,7 @@ function getAverage(...numbers) {
         throw "At least two numbers are expected.";
 
     // Throw error if any args are NaN
-    if (!numbers.every((x) => { return !isNaN(x) }))
+    if (!numbers.every(x => { return !isNaN(x) }))
         throw "Numbers contain a value that is NaN or cannot be converted to a number.";
 
     // Return average
