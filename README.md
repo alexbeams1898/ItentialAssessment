@@ -1,5 +1,5 @@
 # Alex Beams Itential Assessment
-This repository contains my solution to the Itential coding assignment.
+This repository contains my solution to the Itential coding assignment. The function created, `getAverage`, can be found in average.js. The tests for this function can be found in test.js.
 
 ## How to run tests
 1. Clone this repository
