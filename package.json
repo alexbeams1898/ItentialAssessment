@@ -6,12 +6,10 @@
   "dependencies": {},
   "devDependencies": {
     "chai": "^4.3.4",
-    "mocha": "^9.1.3",
-    "run-func": "^1.0.5"
+    "mocha": "^9.1.3"
   },
   "scripts": {
-    "test": "mocha",
-    "average": "run-func average.js getAverage"
+    "test": "mocha"
   },
   "author": "Alex Beams",
   "license": "ISC"
