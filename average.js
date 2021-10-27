@@ -5,7 +5,8 @@
  */
 function getAverage(...numbers) {
 
-    // Ensure that all args are converted to a number
+    // Ensure that all args are converted to a number 
+    // Note: args that cannot be converted will result in NaN
     numbers = numbers.map(x => Number(x));
 
     // Throw error if there are not enough args to average
