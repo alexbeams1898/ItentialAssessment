@@ -12,7 +12,7 @@
     <h1>Open console in dev tools to manually test the getAverage() function</h1>
     <script type="text/javascript">
 
-        // Note: This is an **exact duplicate** of the getAverage function found in average.js without the documentation
+        // Note: This is an **exact duplicate** of the getAverage function found in average.js, just without the documentation
         function getAverage(...numbers) {
             numbers = numbers.map(x => Number(x));
             if (numbers.length < 2)
@@ -21,7 +21,7 @@
                 throw "Numbers contain a value that is NaN or cannot be converted to a number.";
             return numbers.reduce((x, y) => x + y) / numbers.length;
         }
-        
+
     </script>
 </body>
 
